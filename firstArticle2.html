@@ -1,0 +1,278 @@
+<style type="text/css">* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    font-weight: 520;
+    font-size:25px;
+}
+
+p {
+    font-weight: bold;
+}
+    .main {
+        display: flex;
+        flex-direction:column;
+        padding: 5px;
+        background-color: #e9ecef;
+        width:auto;
+        
+    }
+
+    .main h1 {
+        font-size:2.5rem;
+    }
+
+    .main p {
+        font-size:1.2rem;
+        line-height: 1;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        padding: 40px;
+        background-color: #adb5bd;
+    }
+
+    .middle h1 {
+        text-align: center;
+        margin-bottom: 55px;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+  
+
+    .middle img {
+        height: 100px;
+    }
+
+    .role {
+        display: flex;
+        text-align: center;
+        align-items:stretch;
+        margin-bottom: 15px;
+        justify-content: space-around;     
+    }
+    .selection {
+        align-items: stretch;
+        /* margin-left:6rem; */
+        line-height: 12px;
+        font-size:12px;
+        text-align: center;
+    }
+
+    .selection a {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+
+    .selection:hover {
+        color:#f8f9fa;
+    }
+    
+    .selection img {
+        outline: transparent !important;
+        object-fit: contain;
+        transform: translateY(-5px);
+        cursor: pointer;
+        color:#f8f9fa;
+        
+    }
+
+    .selection p {
+        transform: translateY(12px);
+        font-size: .95rem;
+    }
+
+    .selection .csr {
+    transform: translateY(2px);
+    }
+
+
+    .bottom {
+       
+        padding: 50px;
+        background-color: #e9ecef;
+    }
+
+    .bottom h1 {
+        font-size:3rem;
+        margin-bottom: 30px;
+    }
+
+    .bottom__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .bottom__content .topic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        font-size:1rem;
+        line-height: 1.2;
+        
+        
+    }
+
+    .bottom__content .topic a {
+        font-size:1rem;
+        text-decoration: none;
+        cursor: pointer;
+        color:#000;
+    }
+
+    .browse-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .browse-section a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .browse-section img {
+        outline:none;
+        cursor: pointer;
+    }
+    /* Below is Q & a styling */
+
+    .bottom__q {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        height: 150px;
+        padding: 10px;
+   }
+
+   .bottom__q img {
+       height: 50px;
+   }
+    
+
+  
+    @media only screen and (max-width: 800px) {
+        .role {
+            display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: -5px;
+        }
+
+        .selection p {
+            margin-bottom:20px;
+        }
+        .browse-section {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .role {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-right: -15px;
+            
+        }
+        
+        .role img {
+            object-fit: contain;
+            width: 100px;
+        }
+        
+        .selection p {
+            margin-bottom: 25px;
+        }
+        .browse-section {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
+
+@media only screen and (max-width:350px) {
+
+    .role {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .bottom__content {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .bottom__content .topic {
+        margin-bottom:5px;
+    }
+}
+</style>
+<section class="main">
+<p style="text-align: center;">Purpose</p>
+
+<p style="text-align: center;">How to navigate</p>
+
+<p style="text-align: center;">etc</p>
+</section>
+
+<section class="middle">
+<h1 style="text-align: center;"><span>Kickoff Learning Journey</span></h1>
+
+<div class="role">
+<div class="selection"><a href="#"><img alt="AM/specialist" height="100px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/2323/role-team-member-circle.png" width="100%" /></a>
+
+<p>AM/specialist</p>
+</div>
+
+<div class="selection"><a href="#"><img alt="Customer service" height="111px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/2126/persona_CS_woman.png" style="width: 102px; height: 113px;" width="100%" /></a>
+
+<p class="csr">CSR</p>
+</div>
+
+<div class="selection"><a href="#"><img alt="" height="100px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/2323/role-hr-circle.png" width="100%" /></a>
+
+<p>HSR</p>
+</div>
+
+<div class="selection"><a href="#"><img alt="Team leader" height="100px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/2323/role-team-leader-circle.png" width="100%" /></a>
+
+<p>Team leader</p>
+</div>
+</div>
+
+<p style="font-weight:100;text-align: center;font-size:3rem;color:#fff;margin-top: 40px;">Select your role</p>
+</section>
+
+<section class="bottom">
+<h1 style="text-align: center;">Browse topics</h1>
+
+<div class="bottom__content">
+<div class="browse-section">
+<div class="topic"><a href="#"><img alt="sales-tactics" border="0" height="150px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/3449/sales-tactics.jpg" /></a>Sales tactics</div>
+
+<div class="topic"><a href="#"><img alt="worker" border="0" height="150px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/3449/worker.jpg" /></a>Trade</div>
+
+<div class="topic"><a href="#"><img alt="product" border="0" height="150px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/3449/product.jpg" /></a>Product</div>
+
+<div class="bottom__q">
+<p>Frequently asked questions</p>
+<a href="#"><img alt="" line-height="80px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/3449/MicrosoftTeams-image%20(1).png" /> </a></div>
+
+<div class="topic">&nbsp;</div>
+</div>
+</div>
+</section>

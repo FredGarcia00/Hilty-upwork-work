@@ -1,0 +1,236 @@
+<style type="text/css">
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.shape__1 {
+    position: relative;
+    margin-right: -45px;
+     height: 153px;
+    width: 200px;
+     background-color: darkgrey;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+}
+ .shape {
+     position: relative;
+     margin-right: -45px;
+     height: 153px;
+     width:200px;
+     background-color: darkgrey;
+     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%,0% 0%);
+ }
+
+ .shape p, 
+ .shape__1 p {
+     display: flex;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     transform: translateX(19px);
+     font-size:15px;
+     font-weight: bold;
+    
+ }
+
+ .shape__2 {
+     position: relative;
+     transform: translateX(-41px) !important;
+ }
+
+ .shape__move{
+     display: flex;
+     transform: translateX(-81px);
+ }
+ .bottom {
+     display: flex;
+     flex-direction: column;
+     max-width: 700px;
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ .bottom img {
+    transform: translate(-50px, 113px);
+ }
+
+ .bottom__header{
+    background-color:#eeebe2;
+    padding: 60px 60px;
+    margin-bottom: 5px;
+ }
+
+ .bottom__header p {
+     font-size:1rem;
+ }
+
+ .bottom__list {
+    background-color:#d6d3c8;
+    padding: 20px;
+    margin-bottom: 18px;
+ }
+
+ 
+
+
+ 
+
+ @media only screen and (max-width:800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+ }
+ @media only screen and (max-width:530px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 500px;
+        width: 100%;
+    }
+    .shape2,
+    .shape4, 
+    .shape7,
+    .shape9{
+        transform: translateX(-46px) !important;
+        /* max-width: 140px;
+        width: 100%; */
+    }
+ }
+
+ @media only screen and (max-width:500px) {
+     .container {
+         display:flex;
+         flex-direction: column;
+
+     }
+
+     .shape {
+         width: 358px;
+     }
+     .shape__1 {
+        width: 298px;
+     }
+
+     .shape3,
+     .shape5,
+     .shape7,
+     .shape9 {
+        transform: translateX(-47px);
+     }
+
+     .shape6, .shape8, .shape10 {
+         
+    transform: translateX(-47px);
+
+     }
+
+     .container__bottom {
+        margin-top: -10px;
+     }
+
+     .bottom img {
+    transform: translate(60px, 55px);
+
+    }
+
+}
+
+ 
+
+
+</style>
+
+<section class="container">
+   
+    <div class="shape__1">
+        <p>The future of cordless</p>
+    </div>
+    <div class="shape shape2">
+        <p>Patience is key</p>
+    </div>
+    
+        <div class="shape shape3">
+            <p>Let's get<br> down to business</p>
+        </div>
+        
+    <div class="shape shape4">
+        <p>The future is now</p>
+    </div>
+    <div class="shape shape5">
+        <p>Supporting<br> our customers</p>
+    </div>
+   
+   
+   
+</section>
+
+<section class="container container__bottom">
+    <div class="shape shape6">
+        <p>The Power<br> of the Platform</p>
+    </div>
+    <div class="shape shape7">
+        <p>Performance <br>focused on<br> applications</p>
+    </div>
+    <div class="shape shape8">
+        <p>Data driven<br> services</p>
+    </div>
+    <div class="shape shape9">
+        <p>Health and safety</p>
+    </div>
+    <div class="shape shape10">
+        <p>Launch preparation</p>
+    </div>
+</section>
+
+<div class="bottom">
+    <div>
+        <img alt="Team leader" height="100px" src="https://fusion-universal-assets-production.s3.amazonaws.com/file-host/5af42070-0533-49eb-9822-934eebf32cb7--1399798036194765884-/2323/role-team-leader-circle.png"width="100px" />
+
+    </div>
+    <div class="bottom__header">
+            <h1>Team Leader Journey</h1>
+            <p>instructions</p> 
+    </div>
+    <div class="bottom__list">
+        <p>Pre-launch Pulses</p>
+        <ol>
+            <li>example</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <p>Value Propositions</p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <p>Launch Event</p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</div>
+
+
+
+
+
+
